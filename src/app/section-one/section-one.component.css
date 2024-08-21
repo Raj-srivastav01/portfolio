@@ -1,0 +1,179 @@
+.section-one {
+  background-color: #0f1724;
+  position: relative;
+  padding: 20px;
+}
+
+.section-one::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.content-card {
+  background-color: transparent;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: overlay;
+  margin: 20px;
+  padding: 30px;
+  position: relative;
+  z-index: 2;
+}
+.toolbar{
+  background: transparent;
+}
+.logo{
+  font-size: 30px;
+  color: skyblue;
+}
+.toolbar a{
+  color:lightgrey;
+  font-size: 18px;
+}
+.profile-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.text-content {
+  max-width: 55%; /* Adjusted width for better spacing */
+  padding-left: 20px;
+}
+
+.greeting-text {
+  font-size: 60px;
+  font-weight: bold;
+  background: linear-gradient(to right, #875bc4, #1baac6);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 70px; 
+  padding: 0;
+  line-height: 1.2; 
+}
+
+.content {
+  max-width: 100%;
+}
+.spacer{
+  flex: 1 1 auto;
+  
+}
+
+.content p {
+  font-size: 40px;
+  margin: 0; /* Remove margins */
+  color: lightgrey;
+  margin-top:70px;
+  margin-left:90px;
+}
+.image-content {
+  display: flex;
+  margin-top:80;
+  justify-content: flex-end;
+  max-width: 30%;
+  border: 2px solid;
+  border-image: linear-gradient(to bottom right, #875bc4, #1baac6) 1;
+  border-radius: 20px;
+}
+
+.image-content img {
+  max-width: 100%; 
+  height: auto;
+  border-radius: 15px;
+
+  object-fit: cover;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.social-icon {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  animation: bounce 1s infinite;
+}
+
+.social-icon img {
+  width: 100%;
+  height: auto;
+  filter: brightness(0) invert(1); /* Convert icon color to white */
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-3px);
+  }
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .profile-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .text-content {
+    max-width: 100%;
+  }
+
+  .image-content {
+    max-width: 100%; /* Adjusted width for better spacing on mobile */
+    margin-top: 20px;
+  }
+
+  .toolbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  .logo {
+    font-size: 24px;
+  }
+
+  .toolbar a {
+    display: block;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+
+.toolbar {
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
+  
+}
+
+.logo {
+  font-size: 24px;
+}
+
+.toolbar a {
+  font-size: 16px;
+  margin-left: 10px; 
+.menu-button {
+  display: none; 
+  }
+}
+
+} 

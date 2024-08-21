@@ -1,0 +1,56 @@
+/* Section Five Styling */
+.additional-skills {
+  background-color: #0f1724; /* Background color for the section */
+  padding: 20px; /* Padding inside the section */
+  margin: 0;; /* 10% margin from each side */
+}
+
+/* Section Heading */
+.section-heading {
+  color: white; 
+  font-size: 2rem;
+  margin-bottom: 40px; 
+  text-align: center; 
+}
+
+/* Skills List */
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; 
+  justify-content: center; 
+}
+
+/* Individual Skill Item */
+.skill-item {
+  display: flex;
+  align-items: center;
+  gap: 15px; 
+  padding: 10px; 
+  border-radius: 8px; 
+  background: transparent;
+  color: white; 
+  width: calc(33.333% - 20px);
+  box-sizing: border-box; 
+  padding-left: 10%;
+  font-size: 20px;
+}
+
+/* Skill Icon */
+.skill-icon {
+  width: 20px; 
+  height: 20px;
+  border-radius: 50%; 
+  background: linear-gradient(to bottom right, #875bc4, #1baac6); 
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .skill-item {
+    width: calc(50% - 20px); /* Two items per row on smaller screens */
+  }
+  
+  .skills-list {
+    gap: 15px; /* Reduced gap between items on smaller screens */
+  }
+}

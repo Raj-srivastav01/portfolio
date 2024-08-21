@@ -1,0 +1,65 @@
+/* Section background with image */
+.section-two {
+  background-color: #0f1724;
+  padding: 40px 0;
+}
+
+/* About Me container */
+.about-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px;
+}
+
+/* Image styling with shadow */
+.about-image img {
+  max-width: 100%;
+  height: auto;
+  border: 2px solid transparent; /* Transparent border to allow gradient */
+  border-radius: 10px;
+  background: linear-gradient(to bottom right, #875bc4, #1baac6), /* Gradient background */
+              transparent; /* Fallback background */
+  background-origin: border-box; /* Ensures gradient is applied to border */
+  background-clip: padding-box, border-box;
+}
+
+/* Content card styling */
+.about-content-card {
+  /* background-color: rgba(31, 30, 30, 0.9); Slightly transparent white */
+  border-radius: 20px;
+  padding: 20px;
+  margin-left: 10px; /* Space between image and content card */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Card shadow */
+  max-width: 60%;
+}
+
+.about-content-card h2 {
+  font-size: 36px;
+  color: #fff; 
+  margin-top: 0;
+}
+
+.about-content-card p {
+  font-size: 22px;
+  color: lightgrey; /* Medium color for content */
+  line-height: 1.6;
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-content-card {
+    max-width: 100%;
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .about-image {
+    margin-bottom: 20px;
+  }
+}

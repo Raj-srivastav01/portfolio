@@ -1,0 +1,78 @@
+/* Section background */
+.section-three {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #0f1724;
+}
+
+/* Section heading */
+.section-three h2 {
+  font-size: 36px;
+  color: #f0dada;
+  margin-bottom: 40px;
+
+}
+
+  .greeting-text {
+    font-size: 6rem;
+    font-weight: bold;
+    background: linear-gradient(to right, #875bc4, #1baac6);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-left: 100px;
+    margin-top: 100px;
+  }
+
+
+/* Card container */
+.card-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; /* Ensures cards wrap to the next line if they don't fit */
+  gap: 20px; /* Space between cards */
+  
+}
+
+/* Individual card styling */
+.card {
+  background-color: transparent;
+  /* box-shadow: rgba(1, 1, 1, 0.9); */
+  border-radius: 15px;
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.9); /* Card shadow */
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+  border: 2px solid;
+  border-image: linear-gradient(to bottom right, #875bc4, #1baac6) 1;
+  border-radius: 10px;
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Hover effect */
+}
+
+/* Icon styling */
+.card img {
+  max-width: 80px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 25px;
+  color: #f0e6e6;
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 80%; /* Cards take up more space on smaller screens */
+  }
+}
